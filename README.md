@@ -1,5 +1,6 @@
 1- Revisit workoutbuddy mern stack tutorial from netninja.dev and now created static site in Render.com. My frontend is fully functional and working. Now deploying the backend.
-![image](https://github.com/Thein-Naing/workout-api-mern-frontend/assets/117463446/c0bad051-7a53-42ff-9dc6-673d6c8ea3f8)
+![image](https://github.com/Thein-Naing/workout-api-mern-frontend/assets/117463446/0a5ff021-45d8-42f1-9d8b-a71183d218a0)
+
 
 
 

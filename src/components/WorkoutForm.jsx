@@ -14,7 +14,7 @@ const WorkoutForm = () => {
     const handleSubmit = async (e)=> {
       e.preventDefault();
       const workout = { title, load, reps}
-      const response = await fetch('/api/workouts', {
+      const response = await fetch('https://workoutbuddy-api-q0yb.onrender.com', {
         method: 'POST',
         body: JSON.stringify(workout),
         headers: {

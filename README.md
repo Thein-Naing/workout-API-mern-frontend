@@ -1,3 +1,8 @@
+1- Revisit workoutbuddy mern stack tutorial from netninja.dev and now created static site in Render.com. My frontend is fully functional and working. Now deploying the backend.
+![image](https://github.com/Thein-Naing/workout-api-mern-frontend/assets/117463446/c0bad051-7a53-42ff-9dc6-673d6c8ea3f8)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

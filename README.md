@@ -1,7 +1,7 @@
 1- Revisit workoutbuddy mern stack tutorial from netninja.dev and  I changes some coding in backed and css styling. Then created static site in Render.com and frontend is fully functional and working fine. Now deploying the backend.
 ![image](https://github.com/Thein-Naing/workout-api-mern-frontend/assets/117463446/0a5ff021-45d8-42f1-9d8b-a71183d218a0)
 
-2- Before deploy in Render.com in my local host frontend and backend are working toghether find.
+2- Before deploy in Render.com in my local host frontend and backend are working toghether fine . Now backend is not properly working on Render.com. I will try again tomorrow.
 ![image](https://github.com/Thein-Naing/workout-api-mern-frontend/assets/117463446/d789a917-212d-4da8-b38f-aa948acd0870)
 
 

@@ -11,7 +11,8 @@ By the way(you can buy this course in net-ninja-pro.teachable.com). I created st
 
 
 
-
+#
+To fix babel plun in error : npm install @babel/plugin-proposal-private-property-in-object
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,3 +1,21 @@
+1- Revisit workoutbuddy mern stack tutorial from netninja.dev and  I changes some coding in backed and css styling. 
+By the way(you can buy this course in net-ninja-pro.teachable.com). I created static site in Render.com and frontend is fully functional and working fine. Now deploying the backend.
+
+<img width="960" alt="image" src="https://github.com/Thein-Naing/workout-api-mern-frontend/assets/117463446/8bfdfff5-9e06-41f1-a082-9decdcb04cba">
+
+![image](https://github.com/Thein-Naing/workout-api-mern-frontend/assets/117463446/0a5ff021-45d8-42f1-9d8b-a71183d218a0)
+
+2- Before deploy in Render.com in my local host frontend and backend are working toghether fine . Now backend is not properly working on Render.com. I will try again tomorrow.
+![image](https://github.com/Thein-Naing/workout-api-mern-frontend/assets/117463446/a44122b1-0381-4e5e-8c28-eea4b9e71277)
+
+
+
+
+
+
+
+#
+To fix babel plun in error : npm install @babel/plugin-proposal-private-property-in-object
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -14,7 +14,8 @@ const WorkoutForm = () => {
     const handleSubmit = async (e)=> {
       e.preventDefault();
       const workout = { title, load, reps}
-      const response = await fetch('https://workoutbuddy-api-q0yb.onrender.com/api/workouts', {
+      // const response = await fetch('https://workoutbuddy-api-q0yb.onrender.com/api/workouts', {
+        const response = await fetch('./api/workouts', {
         method: 'POST',
         body: JSON.stringify(workout),
         headers: {
@@ -59,7 +60,7 @@ const WorkoutForm = () => {
       className={emptyFields.includes(load) ? 'error' :''}
       />
 
-      <label>Reps: (in kg) </label>
+      <label>Reps:</label>
        <input
       type='number'
       onChange={(e)=> setReps (e.target.value)}

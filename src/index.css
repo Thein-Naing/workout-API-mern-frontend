@@ -15,7 +15,7 @@ box-sizing: border-box;
 }
 
 body {
-  background: linear-gradient(90deg, #acb3cd 20%, #050505 90%, #bb0fc1 100%, #171617 10%);
+  background: linear-gradient(90deg, #090909 20%, #faf6f6 90%, #bb0fc1 100%, #171617 10%);
   margin: 0;
   font-family: "Poppins";
 }
@@ -56,12 +56,13 @@ header a {
   gap: 100px;
 }
 .workout-details {
-  background: #fff;
+  background: #111010;
   border-radius: 4px;
   margin: 20px auto;
   padding: 20px;
   position: relative;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  width: 400px;
 }
 .workout-details h4 {
   margin: 0 0 10px 0;
@@ -71,7 +72,7 @@ header a {
 .workout-details p {
   margin: 0;
   font-size: 0.9em;
-  color: #555;
+  color: #f90e0e;
 }
 .workout-details span {
   position: absolute;

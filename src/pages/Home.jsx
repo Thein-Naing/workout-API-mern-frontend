@@ -15,7 +15,8 @@ const Home = () => {
   //But we only want to fire once so provide dependency array as 2nd argument.
   useEffect(() => {
     const fetchWorkouts = async () => {
-      const response = await fetch("https://workoutbuddy-api-q0yb.onrender.com/api/workouts");
+      // const response = await fetch("https://workoutbuddy-api-q0yb.onrender.com/api/workouts");
+      const response = await fetch("./api/workouts");
       const json = await response.json();
 
       if (response.ok) {

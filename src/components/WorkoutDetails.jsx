@@ -7,10 +7,12 @@ const WorkoutDetails = ({ workout }) => {
   const { dispatch } = useWorkoutsContext();
 
   const handleClick = async () => {
-    // const response = await fetch('https://workoutbuddy-api-q0yb.onrender.com/api/workouts' + workout._id, {
-    const response = await fetch("./api/workouts" + workout._id, {
-      method: "DELETE",
-    });
+    const response = await fetch(
+      "http://localhost:4000/api/workouts/" + workout._id,
+      {
+        method: "DELETE",
+      }
+    );
     const json = await response.json();
 
     if (response.ok) {
@@ -29,7 +31,7 @@ const WorkoutDetails = ({ workout }) => {
         <strong>Number of reps: </strong>
         {workout.reps}
       </p>
-      {/* <p>{workout.createdAt}</p> */}
+
       <p>
         {formatDistanceToNow(new Date(workout.createdAt), { addSuffix: true })}
       </p>

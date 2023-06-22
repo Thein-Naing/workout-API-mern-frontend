@@ -1,5 +1,5 @@
-1- Revisit workoutbuddy mern stack tutorial from netninja.dev and  I changes some coding in backed and css styling. 
-By the way(you can buy this course in net-ninja-pro.teachable.com). I created static site in Render.com and frontend is fully functional and working fine. Now deploying the backend.
+1- This is course from netninja.dev MERN crash course. you can check all at `www.netninja.dev`. I changes some coding in backed and css styling. 
+By the way(you can buy this course in `(net-ninja-pro.teachable.com`) also. I created static site in Render.com and frontend is fully functional and working fine. Now deploying the backend.
 
 <img width="960" alt="image" src="https://github.com/Thein-Naing/workout-api-mern-frontend/assets/117463446/8bfdfff5-9e06-41f1-a082-9decdcb04cba">
 

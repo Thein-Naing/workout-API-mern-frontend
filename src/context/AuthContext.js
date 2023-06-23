@@ -28,12 +28,20 @@ export const AuthContextProvider= ({children}) => {
   // 1st argument is authReducer fuction & 2nd argument is initial state value.
   const [state, dispatch ] = useReducer(authReducer, {
     user: null
-  })
+  });
 
+  // 6. wrap children with provider. childern = entire app
+  return (
+    <AuthContext.Provider value={{ ...state, dispatch }}>
+      {children}
+    </AuthContext.Provider>
+  );
 
   //5. test it  and console/log it.
   console.log('AuthContext state:', state)
-}
+
+  }
+
 
 
 

@@ -15,7 +15,7 @@ box-sizing: border-box;
 }
 
 body {
-  background: linear-gradient(90deg, #090909 40%, #ffffff 80%, #c82aae 100%, #0c0c0c 10%);
+  background: linear-gradient(90deg, #090909 50%, #ffffff 70%, #c82aae 100%, #0c0c0c 10%);
   margin: 0;
   font-family: "Poppins";
 }

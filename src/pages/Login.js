@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -9,7 +9,7 @@ const Login = () => {
     console.log(email, password);
   };
   return (
-    <form className="signup" onSubmit={handleSubmit}>
+    <form className="login" onSubmit={handleSubmit}>
       <h3>Login</h3>
 
       <label>Email:</label>

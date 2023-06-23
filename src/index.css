@@ -15,10 +15,11 @@ box-sizing: border-box;
 }
 
 body {
-  background: linear-gradient(90deg, #090909 50%, #ffffff 70%, #c82aae 100%, #0c0c0c 10%);
+  background: linear-gradient(90deg, #090909 80%, #ffffff 90%, #c82aae 100%, #0c0c0c 10%);
   margin: 0;
   font-family: "Poppins";
 }
+
 header {
   background: #fff;
 }
@@ -26,29 +27,19 @@ header .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 10px 20px;
-  display:flex;
+  display: flex;
   align-items: center;
-  justify-content:center;
-
+  justify-content: space-between;
 }
-
 header a {
-  color: #fcfcff;
+  color: #333;
   text-decoration: none;
-  height: 80px;
-  display:flex;
-  align-items: center;
-  justify-content:center;
-  background-color: #191819;
-
 }
-
 .pages{
-  max-width: 800px;
+  max-width: 1400px;
   padding: 20px;
   margin: 0 auto;
 }
-
 
 /* homepage */
 .home {
@@ -57,13 +48,13 @@ header a {
   gap: 100px;
 }
 .workout-details {
-  background: #111010;
+  background: #878798;
   border-radius: 4px;
   margin: 20px auto;
+  width: 300px;
   padding: 20px;
   position: relative;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
-  width: 400px;
 }
 .workout-details h4 {
   margin: 0 0 10px 0;
@@ -73,7 +64,7 @@ header a {
 .workout-details p {
   margin: 0;
   font-size: 0.9em;
-  color: #f90e0e;
+  color: #5d0808;
 }
 .workout-details span {
   position: absolute;
@@ -85,7 +76,6 @@ header a {
   border-radius: 50%;
   color: #333;
 }
-
 
 /* new workout form */
 label, input {
@@ -100,11 +90,6 @@ input {
   border-radius: 4px;
   box-sizing: border-box;
 }
-
-input.error {
-border: 1px solid var(--error)
-}
-
 form button {
   background: var(--primary);
   border: 0;
@@ -122,8 +107,35 @@ div.error {
   border-radius: 4px;
   margin: 20px 0;
 }
+input.error {
+  border: 1px solid var(--error);
+}
 
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 10px;
+}
 
-h3 {
-  width: 200px;
+nav button {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* auth forms */
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
 }

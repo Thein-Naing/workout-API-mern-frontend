@@ -15,7 +15,7 @@ box-sizing: border-box;
 }
 
 body {
-  background: linear-gradient(90deg, #090909 20%, #faf6f6 90%, #bb0fc1 100%, #171617 10%);
+  background: linear-gradient(90deg, #090909 40%, #ffffff 80%, #c82aae 100%, #0c0c0c 10%);
   margin: 0;
   font-family: "Poppins";
 }
@@ -35,6 +35,7 @@ header .container {
 header a {
   color: #fcfcff;
   text-decoration: none;
+  height: 80px;
   display:flex;
   align-items: center;
   justify-content:center;

@@ -1,7 +1,7 @@
-// // import createContext function from react
+// import createContext function from react
 import { createContext, useReducer } from "react";
 
-// //then store/create require context.
+//then store/create require context.
 export const WorkoutsContext = createContext();
 
 export const workoutsReducer = (state, action) => {
@@ -24,8 +24,8 @@ export const workoutsReducer = (state, action) => {
   }
 };
 
-// // then provide that context to our application component tree so that
-// //our component can access it.
+// then provide that context to our application component tree so that
+//our component can access it.
 export const WorkoutsContextProvider = ({ children }) => {
   // call userReducer hook.
   const [state, dispatch] = useReducer(workoutsReducer, {
@@ -37,4 +37,4 @@ export const WorkoutsContextProvider = ({ children }) => {
     </WorkoutsContext.Provider>
   );
 };
-//  // then import {workoutsContextProvider} in index.js
+  // then import {workoutsContextProvider} in index.js

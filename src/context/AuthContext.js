@@ -1,5 +1,5 @@
 // 1.import createContext function from react
-import { createContext, useReducer } from "react";
+import { createContext, useReducer, useEffect } from "react";
 
 //2.then store/create require context for provider & export it.
 export const AuthContext = createContext();
@@ -28,6 +28,14 @@ export const AuthContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(authReducer, {
     user: null,
   });
+
+  //7. import and call useEffect once with JSON.parse.
+  useEffect(() =>{
+    const user = JSON.parse(localStorage.getItem('user'))
+    if (user) {
+      dispatch({ type:"LOGIN", payload: user})
+    }
+  }, [])
 
   //5. test it  and console/log it.
   console.log("AuthContext state:", state);

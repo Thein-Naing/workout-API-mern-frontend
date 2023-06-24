@@ -1,17 +1,32 @@
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
 
+//import useAuthContext to authorize user
+import { useAuthContext } from "../hooks/useAuthContext";
+
+
 //date fns.
 import formatDistanceToNow from "date-fns/formatDistanceToNow";
 
 const WorkoutDetails = ({ workout }) => {
   const { dispatch } = useWorkoutsContext();
 
+     // we will authorize user. destructure by grabbing from useAuthContext
+     const { user } = useAuthContext();
+
   const handleClick = async () => {
+
+    if(!user) {
+      return
+    }
     const response = await fetch(
       // "http://localhost:4000/api/workouts/" + workout._id,
       "/api/workouts/" + workout._id,
       {
         method: "DELETE",
+        // add headers.
+        headers: {
+          'Authorization': `Bearer ${user.token}`
+        }
       }
     );
     const json = await response.json();

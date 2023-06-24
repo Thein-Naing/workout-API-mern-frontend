@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
 
+//import useAuthContext to authorize user
+import { useAuthContext } from "../hooks/useAuthContext";
+
 //components
 import WorkoutDetails from "../components/WorkoutDetails";
 import WorkoutForm from "../components/WorkoutForm";
@@ -11,13 +14,22 @@ const Home = () => {
   //destructure useWorkoutsContext
   const { workouts, dispatch } = useWorkoutsContext();
 
+  // we will authorize user. destructure by grabbing from useAuthContext
+  const { user } = useAuthContext();
+
   // useEffect will fire a function when a component is rendered.
   //But we only want to fire once so provide dependency array as 2nd argument.
   useEffect(() => {
     const fetchWorkouts = async () => {
-
       // const response = await fetch("http://localhost:4000/api/workouts");
-      const response = await fetch("/api/workouts");
+
+      // add authorization headers inside fetch also
+      const response = await fetch("/api/workouts", {
+        headers: {
+          'Authorization': `Bearer ${user.token}`
+        }
+      });
+
       const json = await response.json();
 
       if (response.ok) {
@@ -27,8 +39,15 @@ const Home = () => {
       }
     };
 
-    fetchWorkouts();
-  }, [dispatch]);
+    // update fetchWorkouts() with if user exist
+
+    if (user) {
+      fetchWorkouts();
+    }
+
+    // fetchWorkouts();
+    //also update dependency array with user
+  }, [dispatch, user]);
 
   return (
     <div className="home">

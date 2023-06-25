@@ -24,7 +24,7 @@ const Home = () => {
       // const response = await fetch("http://localhost:4000/api/workouts");
 
       // add authorization headers inside fetch also
-      const response = await fetch("/api/workouts", {
+      const response = await fetch("https://workoutbuddy-59wj.onrender.com/api/workouts", {
         headers: {
           'Authorization': `Bearer ${user.token}`
         }

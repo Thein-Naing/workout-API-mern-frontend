@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  background: #fff;
+  background: #1a1919;
 }
 header .container {
   max-width: 1400px;
@@ -32,7 +32,7 @@ header .container {
   justify-content: space-between;
 }
 header a {
-  color: #333;
+  color: #f9f8fd;
   text-decoration: none;
 }
 .pages{

@@ -15,13 +15,14 @@ box-sizing: border-box;
 }
 
 body {
-  background: linear-gradient(90deg, #090909 70%, #ffffff 80%, #9a06ab 90%,  #fafcff 100%);
+  background: linear-gradient(90deg, #090909 75%, #ffffff 80%, #9f9da7 90%,  #962296 100%);
   margin: 0;
   font-family: "Poppins";
 }
 
 header {
   background: #1a1919;
+
 }
 header .container {
   max-width: 1400px;
@@ -32,8 +33,10 @@ header .container {
   justify-content: space-between;
 }
 header a {
-  color: #f9f8fd;
+  color: #35383d;
   text-decoration: none;
+  border-style:groove;
+
 }
 .pages{
   max-width: 1400px;
